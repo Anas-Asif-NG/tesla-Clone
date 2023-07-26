@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="head">
+      $7,500 Federal Tax CreditAvailable for new Model 3 and Model Y. Reductions
+      to tax credit likely after Dec 31. See Details
+    </div>
+    <div class="container">
+      <div class="fixed">
+        <div class="nav" id="navs">
+          <div class="logo">
+            <img
+              src="./img/pngfind.com-tesla-logo-png-499219.png"
+              width="150px"
+              alt=""
+            />
+          </div>
+          <div class="lists">
+            <div>Model S</div>
+            <div>Model 3</div>
+            <div>Model X</div>
+            <div>Model Y</div>
+            <div>Solar Roof</div>
+            <div>Solar Panels</div>
+            <div>Powerwall</div>
+          </div>
+          <div class="user">
+            <div>Shop</div>
+            <div>About</div>
+            <div>Menue</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="titles">
+            <div id="title">Experience Tesla</div>
+            <div id="sub-title">Schedule a Demo Drive Today</div>
+          </div>
+
+          <div class="btns">
+            <div class="btn" id="btn1">Demo Drive</div>
+            <div class="btn" id="btn2">Shop Now</div>
+            <div class="btn" id="btn3">Lead More</div>
+          </div>
+        </div>
+        <div class="footer" id="footers">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="bd">
+        <div class="section1 section">
+        <video autoplay  loop muted plays-inline class="back">\
+            <source src="./img/Untitled design.mp4" > 
+        </video>
+
+        </div>
+        <div class="section2 section"></div>
+        <div class="section3 section"></div>
+        <div class="section4 section"></div>
+        <div class="section5 section"></div>
+        <div class="section6 section"></div>
+        <div class="section7 section"></div>
+        <div class="section8 section"></div>
+        <div class="section9 section"></div>
+      </div>
+    </div>
+
+    <script>
+               window.addEventListener("scroll", (e) => {
+                 console.log(window.scrollY); // reset the scroll position to the top left of the document.
+                 //0 552 1109 1690 2254 2800 3313 3902
+                 var nav = document.getElementById('navs');
+                 var title = document.getElementById('title');
+                 var subTitle = document.getElementById('sub-title');
+                 var btn1 = document.getElementById('btn1');
+                 var btn2 = document.getElementById('btn2');
+                 var btn3 = document.getElementById('btn3');
+                 var footer = document.getElementById('footers');
+                 if(window.scrollY >= 4540) {
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     subTitle.style.color = 'black';
+                     subTitle.style.textDecoration = 'none';
+                     title.innerHTML = 'Accessories'
+                                          subTitle.innerHTML = ''
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'none'
+                     btn2.innerHTML = 'Shop Now'
+                     btn3.innerHTML = ''
+                 }
+                 else if(window.scrollY >= 3902){
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     subTitle.style.color = 'black';
+                     subTitle.style.textDecoration = 'none';
+                     title.innerHTML = 'Powerwall'
+                     footer.style.display = 'none'
+                     subTitle.innerHTML = ''
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Order Now'
+                     btn3.innerHTML = 'Learn More'
+                 }
+                 else if(window.scrollY >= 3313){
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     subTitle.style.color = 'black';
+                     subTitle.style.textDecoration = 'none';
+                     footer.style.display = 'none'
+                     title.innerHTML = 'Solar Roof'
+                     subTitle.innerHTML = 'Produce Clean Energy From Your Roof'
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Order Now'
+                     btn3.innerHTML = 'Learn More'
+                 }
+
+                 else if(window.scrollY >= 2800){
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     footer.style.display = 'none'
+                     subTitle.style.color = 'black';
+                     subTitle.style.textDecoration = 'underline';
+                     title.innerHTML = 'Solar Panels'
+                     subTitle.innerHTML = 'Schedule a Virtual Consultation'
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Order Now'
+                     btn3.innerHTML = 'Learn More'
+                 }
+
+                 else if(window.scrollY >= 2254){
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     footer.style.display = 'none'
+                     subTitle.style.color = 'black';
+                     subTitle.style.textDecoration = 'underline';
+                     title.innerHTML = 'Model X'
+                     subTitle.innerHTML = 'Explore Invertory'
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Custom Order'
+                     btn3.innerHTML = 'Demo Drive'
+                               }
+
+                 else if(window.scrollY >= 1690){
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     subTitle.style.color = 'black';
+                     footer.style.display = 'none'
+                     subTitle.style.textDecoration = 'underline';
+                     title.innerHTML = 'Model S'
+                     subTitle.innerHTML = 'Explore Invertory'
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Custom Order'
+                     btn3.innerHTML = 'Demo Drive'
+                 }
+
+                 else if(window.scrollY >= 1109){
+                   nav.style.color = 'black';
+                     title.style.color = 'black';
+                     subTitle.style.color = 'black';
+                     title.innerHTML = 'Model Y'
+                     footer.style.display = 'none'
+                     subTitle.style.textDecoration = 'underline';
+                     subTitle.style.textDecoration = 'none';
+                     subTitle.innerHTML = 'Starting at $40,240 <br/> After Federal Tax Credit'
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Exploer Invertory'
+                     btn3.innerHTML = 'Custom Order'
+                 }
+                 else if(window.scrollY >= 552){
+                     nav.style.color = 'black';
+                     title.style.color = 'black';
+                     footer.style.display = 'none'
+                     subTitle.style.textDecoration = 'none';
+                     subTitle.style.color = 'black';
+                     title.innerHTML = 'Model 3'
+                     subTitle.innerHTML = 'Starting at $32,740 <br/> After Federal Tax Credit'
+                     btn1.style.display = 'none'
+                     btn2.style.display = 'block'
+                     btn3.style.display = 'block'
+                     btn2.innerHTML = 'Exploer Invertory'
+                     btn3.innerHTML = 'Custom Order'
+                 }
+                 else{
+                   nav.style.color = 'white';
+                     title.style.color = 'white';
+                     footer.style.display = 'none'
+                     subTitle.style.textDecoration = 'none';
+                     subTitle.style.color = 'white';
+                     title.innerHTML = 'Experience Tesla'
+                     subTitle.innerHTML = 'Schedule a Demo Drive Today'
+                     btn1.style.display = 'block'
+                     btn2.style.display = 'none'
+                     btn3.style.display = 'none'
+                     btn1.innerHTML = 'Demo Drive'
+
+                 }
+               })
+    </script>
+  </body>
+</html>
